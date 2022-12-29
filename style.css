@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #299be4;
+    padding: 0 20px;
+}
+
+.header-title {
+    padding: 25px 0;
+} 
+
+.header-title h1{
+    margin: 0;
+    color: #fff;
+}
+
+.header-list{
+    margin: 30px 0;
+}
+.button-header {
+    background-color: #299be4;
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.button-header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-header a i {
+    margin-right: 5px
+}
+
+.list-customer{
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.list-customer thead {
+    background-color: #4caf50;
+
+}
+
+.list-customer thead th {
+    padding: 15px 0;
+}
+
+.list-customer tbody tr td:first-child {
+    padding: 10px;
+    text-align: center;
+}
+
+.list-customer tbody tr td:last-child {
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+
+}
+
+.list-customer tbody tr td a{
+   margin-right: 10px;
+}
+
+.button-update {
+    color: gray;
+    padding: 1px;
+    border: 3px solid grey;
+    border-radius: 5px;
+}
+
+.button-deposit {
+    color: #158652;
+    padding: 1px;
+    border: 3px solid #158652;
+    border-radius: 5px;
+}
+
+.button-withdraw {
+    color: #ffe3af;
+    padding: 1px;
+    border: 3px solid #ffe3af;
+    border-radius: 5px;
+}
+
+.button-transfer {
+    color: #226ffd;
+    padding: 1px;
+    border: 3px solid #226ffd;
+    border-radius: 5px;
+}
+
+.button-suspended {
+    color: #e05a68;
+    padding: 1px;
+    border: 3px solid #e05a68;
+    border-radius: 5px;
+}
