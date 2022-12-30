@@ -108,16 +108,16 @@ body {
 }
 
 .button-withdraw {
-    color: #ffe3af;
+    color: #ffbd03;
     padding: 1px;
-    border: 3px solid #ffe3af;
+    border: 3px solid #ffbd03;
     border-radius: 5px;
 }
 
 .button-withdraw:hover {
     color: #fff;
     border: 3px solid #fff;
-    background-color: #ffe3af;
+    background-color: #ffbd03;
     transition: all 0.3s;
 }
 
@@ -195,6 +195,110 @@ body {
 
 .button-create .btn-create a {
     color: #299be4;
+    text-decoration: none;
+   
+}
+
+/* FORM edit Customer */
+
+.button-edit {
+    margin-top: 15px;
+}
+
+.button-edit .btn-edit {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.button-edit .btn-edit:hover{
+    background-color: gray;
+}
+
+.button-edit .btn-edit:hover a {
+    color: #fff !important;
+}
+
+.button-edit .btn-edit a {
+    color: gray;
+    text-decoration: none;
+   
+}
+
+/* FORM deposit Customer */
+
+.button-deposit-submit {
+    margin-top: 15px;
+}
+
+.button-deposit-submit .btn-deposit {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #158652;
+}
+
+.button-deposit-submit .btn-deposit:hover{
+    background-color: #158652;
+}
+
+.button-deposit-submit .btn-deposit:hover a {
+    color: #fff !important;
+}
+
+.button-deposit-submit .btn-deposit a {
+    color: #158652;
+    text-decoration: none;
+   
+}
+
+/* FORM withdraw Customer */
+
+.button-withdraw-submit {
+    margin-top: 15px;
+}
+
+.button-withdraw-submit .btn-withdraw {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #ffbd03;
+}
+
+.button-withdraw-submit .btn-withdraw:hover{
+    background-color: #ffbd03;
+}
+
+.button-withdraw-submit .btn-withdraw:hover a {
+    color: #fff !important;
+}
+
+.button-withdraw-submit .btn-withdraw a {
+    color: #ffbd03;
+    text-decoration: none;
+   
+}
+
+/* FORM suspended Customer */
+
+.button-suspended-submit {
+    margin-top: 15px;
+}
+
+.button-suspended-submit .btn-suspended {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #e05a68;
+}
+
+.button-suspended-submit .btn-suspended:hover{
+    background-color: #e05a68;
+}
+
+.button-suspended-submit .btn-suspended:hover a {
+    color: #fff !important;
+}
+
+.button-suspended-submit .btn-suspended a {
+    color: #e05a68;
     text-decoration: none;
    
 }
