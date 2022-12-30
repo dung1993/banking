@@ -12,16 +12,17 @@ body {
 
 .header-title {
     padding: 25px 0;
-} 
+}
 
-.header-title h1{
+.header-title h1 {
     margin: 0;
     color: #fff;
 }
 
-.header-list{
+.header-list {
     margin: 30px 0;
 }
+
 .button-header {
     background-color: #299be4;
     color: #fff;
@@ -30,7 +31,7 @@ body {
     border-radius: 5px;
 }
 
-.button-header a{
+.button-header a {
     color: #fff;
     text-decoration: none;
 }
@@ -39,7 +40,7 @@ body {
     margin-right: 5px
 }
 
-.list-customer{
+.list-customer {
     width: 100%;
     border-spacing: 0px;
 }
@@ -51,6 +52,10 @@ body {
 
 .list-customer thead th {
     padding: 15px 0;
+}
+
+.list-customer tbody tr:hover {
+    background-color: lightgray;
 }
 
 .list-customer tbody tr td:first-child {
@@ -65,8 +70,12 @@ body {
 
 }
 
-.list-customer tbody tr td a{
-   margin-right: 10px;
+.list-customer tbody tr td a {
+    margin-right: 10px;
+}
+
+.list-customer tbody tr td a:hover {
+        background-color: lightgray; 
 }
 
 .button-update {
@@ -76,11 +85,26 @@ body {
     border-radius: 5px;
 }
 
+.button-update:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: gray;
+    transition: all 0.3s;
+
+}
+
 .button-deposit {
     color: #158652;
     padding: 1px;
     border: 3px solid #158652;
     border-radius: 5px;
+}
+
+.button-deposit:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #158652;
+    transition: all 0.3s;
 }
 
 .button-withdraw {
@@ -90,6 +114,13 @@ body {
     border-radius: 5px;
 }
 
+.button-withdraw:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #ffe3af;
+    transition: all 0.3s;
+}
+
 .button-transfer {
     color: #226ffd;
     padding: 1px;
@@ -97,9 +128,73 @@ body {
     border-radius: 5px;
 }
 
+.button-transfer:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #226ffd;
+    transition: all 0.3s;
+}
+
 .button-suspended {
     color: #e05a68;
     padding: 1px;
     border: 3px solid #e05a68;
     border-radius: 5px;
+}
+
+.button-suspended:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #e05a68;
+    transition: all 0.3s;
+}
+
+
+/* FORM Create Customer */
+
+.form-customer .from-original .group-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-customer .from-original .group-row div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-customer .from-original .group-row div:first-child {
+    margin-right: 15px;
+}
+
+.form-customer .from-original .group-row div label {
+    padding: 10px 0;
+}
+
+.form-customer .from-original .group-row div input {
+    padding: 5px 0;
+}
+
+.button-create {
+    margin-top: 15px;
+}
+
+.button-create .btn-create {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #299be4;
+}
+
+.button-create .btn-create:hover{
+    background-color: #299be4;
+}
+
+.button-create .btn-create:hover a {
+    color: #fff !important;
+}
+
+.button-create .btn-create a {
+    color: #299be4;
+    text-decoration: none;
+   
 }

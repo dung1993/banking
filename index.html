@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Banking</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="container">
-    <div class="header-bar">
-        <div class="row header-container">
-            <div class="col-md-6 col-lg-6 header-title">
-                <h1>List of Customer</h1>
-            </div>
-            <div class="col-md-6 col-lg-6 header-list">
-                <button class="button-header" type="submit"><a href="#"><i class="fa fa-clock-rotate-left"></i>Transfer money Information</a></button>
-                <button class="button-header" type="submit">
-                    <a href="/index?action=create"><i class="fa fa-plus-square"></i>Add new customer</a>
-                </button>
+    <div class="container">
+        <div class="header-bar">
+            <div class="row header-container">
+                <div class="col-md-6 col-lg-6 header-title">
+                    <h1>List of Customer</h1>
+                </div>
+                <div class="col-md-6 col-lg-6 header-list">
+                    <button class="button-header" type="submit"><a href="#"><i
+                                class="fa fa-clock-rotate-left"></i>Transfer money Information</a></button>
+                    <button class="button-header" type="submit">
+                        <a href="/index?action=create"><i class="fa fa-plus-square"></i>Add new customer</a>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="table-service">
+        <div class="table-service">
             <table class="list-customer">
                 <thead>
-                <tr>
-                    <th>#</th>
-                    <th>FullName</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Balance</th>
-                    <th>Action</th>
-                </tr>
+                    <tr>
+                        <th>#</th>
+                        <th>FullName</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Balance</th>
+                        <th>Action</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -43,7 +50,8 @@
                         <td>Laboris ut Velit Vol</td>
                         <td>0</td>
                         <td>
-                            <a href="/index?action=update&id=${index.getId()}"><i class="button-update fa fa-edit"></i></a>
+                            <a href="/index?action=update&id=${index.getId()}"><i
+                                    class="button-update fa fa-edit"></i></a>
                             <a href="/index?action=deposit"><i class="button-deposit fa fa-plus"></i></a>
                             <a href="/index?action=withdraw"><i class="button-withdraw fa fa-minus"></i></a>
                             <a href="/index?action=transfer"><i class="button-transfer fa fa-exchange"></i></a>
@@ -58,7 +66,8 @@
                         <td>Voluptatem qui nihil</td>
                         <td>10 000 000</td>
                         <td>
-                            <a href="/index?action=update&id=${index.getId()}"><i class="button-update fa fa-edit"></i></a>
+                            <a href="/index?action=update&id=${index.getId()}"><i
+                                    class="button-update fa fa-edit"></i></a>
                             <a href="/index?action=deposit"><i class="button-deposit fa fa-plus"></i></a>
                             <a href="/index?action=withdraw"><i class="button-withdraw fa fa-minus"></i></a>
                             <a href="/index?action=transfer"><i class="button-transfer fa fa-exchange"></i></a>
@@ -73,7 +82,8 @@
                         <td>Totam et rerum volup</td>
                         <td>0</td>
                         <td>
-                            <a href="/index?action=update&id=${index.getId()}"><i class="button-update fa fa-edit"></i></a>
+                            <a href="/index?action=update&id=${index.getId()}"><i
+                                    class="button-update fa fa-edit"></i></a>
                             <a href="/index?action=deposit"><i class="button-deposit fa fa-plus"></i></a>
                             <a href="/index?action=withdraw"><i class="button-withdraw fa fa-minus"></i></a>
                             <a href="/index?action=transfer"><i class="button-transfer fa fa-exchange"></i></a>
@@ -88,7 +98,8 @@
                         <td>Minima exercitation</td>
                         <td>0</td>
                         <td>
-                            <a href="/index?action=update&id=${index.getId()}"><i class="button-update fa fa-edit"></i></a>
+                            <a href="/index?action=update&id=${index.getId()}"><i
+                                    class="button-update fa fa-edit"></i></a>
                             <a href="/index?action=deposit"><i class="button-deposit fa fa-plus"></i></a>
                             <a href="/index?action=withdraw"><i class="button-withdraw fa fa-minus"></i></a>
                             <a href="/index?action=transfer"><i class="button-transfer fa fa-exchange"></i></a>
@@ -103,7 +114,8 @@
                         <td>Ex ad fugit non ver</td>
                         <td>0</td>
                         <td>
-                            <a href="/index?action=update&id=${index.getId()}"><i class="button-update fa fa-edit"></i></a>
+                            <a href="/index?action=update&id=${index.getId()}"><i
+                                    class="button-update fa fa-edit"></i></a>
                             <a href="/index?action=deposit"><i class="button-deposit fa fa-plus"></i></a>
                             <a href="/index?action=withdraw"><i class="button-withdraw fa fa-minus"></i></a>
                             <a href="/index?action=transfer"><i class="button-transfer fa fa-exchange"></i></a>
@@ -113,7 +125,8 @@
                 </tbody>
 
             </table>
+        </div>
     </div>
-</div>
 </body>
+
 </html>
