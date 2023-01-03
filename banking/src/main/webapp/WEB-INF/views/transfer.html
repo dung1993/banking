@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css"
+        integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="header-bar">
+        <div class="row header-container">
+            <div class="col-md-6 col-lg-6 header-title">
+                <h1>Transfer Money Information</h1>
+            </div>
+            <div class="col-md-6 col-lg-6 header-list">
+                <button class="button-header" type="submit"><a href="#"><i class="fa fa-bars"></i>List Customer</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="form-transfer row">
+        <div class="col-md-12 col-lg-12">
+            <form class="from-original" action="">
+                <div class="group-row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="col-md-3 col-lg-3">
+                            <label for="senderId">Sender ID</label>
+                            <input type="number" name="senderId" id="senderId">
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <label for="senderName">Sender Name</label>
+                        <input type="text" name="senderName" id="senderName">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="col-md-3 col-lg-3">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <label for="balance">Sender Balance</label>
+                        <input type="number" name="balance" id="balance">
+                        </div>
+                    </div>
+                </div>
+                <div class="group-row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="col-md-3 col-lg-3">
+                            <label for="recipientName">Recipient Name</label>
+                            <input type="text" name="recipientName" id="recipientName">
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <label for="money">Transfer Amount</label>
+                        <input type="number" name="money" id="money">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="col-md-3 col-lg-3">
+                            <label for="fees">Fees (%)</label>
+                            <input type="number" name="fees" id="fees" value="10" readonly>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <label for="total">Total amount of transaction</label>
+                        <input type="number" name="total" id="total">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="button-transfer-submit">
+            <button class="btn-transfer" type="submit">
+                <a href="#"><i class="fa fa-exchange"></i>Transfer</a>
+            </button>
+        </div>
+    </div>
+   </div> 
+</body>
+</html>

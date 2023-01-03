@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="header-bar">
+        <div class="row header-container">
+            <div class="col-md-6 col-lg-6 header-title">
+                <h1>List of Customer</h1>
+            </div>
+            <div class="col-md-6 col-lg-6 header-list">
+                <button class="button-header" type="submit"><a href="#"><i class="fa fa-bars"></i>List Customer</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="form-customer row">
+        <div class="col-md-12 col-lg-12">
+            <form class="from-original" action="">
+                <div class="group-row">
+                    <div class="col-md-6 col-lg-6">
+                        <label for="customer_id">Customer ID</label>
+                        <input type="number" name="customer_id" id="customer_id">
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <label for="fullname">FullName</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div> 
+                </div>
+                <div class="group-row">
+                    <div class="col-md-6 col-lg-6">
+                        <label for="balance">Current Balance ($)</label>
+                        <input type="number" name="balance" id="balance">
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <label for="money">Transaction Amount</label>
+                        <input type="number" name="money" id="money">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="button-deposit-submit">
+            <button class="btn-deposit" type="submit">
+                <a href="#"><i class="fa fa-plus"></i>Deposit</a>
+            </button>
+        </div>
+    </div>
+   </div> 
+</body>
+</html>

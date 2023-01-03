@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #299be4;
+    padding: 0 20px;
+}
+
+.header-title {
+    padding: 25px 0;
+}
+
+.header-title h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.header-list {
+    margin: 30px 0;
+}
+
+.button-header {
+    background-color: #299be4;
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    float: right
+}
+
+.button-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-header a i {
+    margin-right: 5px
+}
+
+.list-customer {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.list-customer thead {
+    background-color: #4caf50;
+
+}
+
+.list-customer thead th {
+    padding: 15px 0;
+}
+
+.list-customer tbody tr:hover {
+    background-color: lightgray;
+}
+
+.list-customer tbody tr td:first-child {
+    padding: 10px;
+    text-align: center;
+}
+
+.list-customer tbody tr td:last-child {
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+
+}
+
+.list-customer tbody tr td a {
+    margin-right: 10px;
+}
+
+.list-customer tbody tr td a:hover {
+        background-color: lightgray; 
+}
+
+.button-update {
+    color: gray;
+    padding: 1px;
+    border: 3px solid grey;
+    border-radius: 5px;
+}
+
+.button-update:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: gray;
+    transition: all 0.3s;
+
+}
+
+.button-deposit {
+    color: #158652;
+    padding: 1px;
+    border: 3px solid #158652;
+    border-radius: 5px;
+}
+
+.button-deposit:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #158652;
+    transition: all 0.3s;
+}
+
+.button-withdraw {
+    color: #ffbd03;
+    padding: 1px;
+    border: 3px solid #ffbd03;
+    border-radius: 5px;
+}
+
+.button-withdraw:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #ffbd03;
+    transition: all 0.3s;
+}
+
+.button-transfer {
+    color: #226ffd;
+    padding: 1px;
+    border: 3px solid #226ffd;
+    border-radius: 5px;
+}
+
+.button-transfer:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #226ffd;
+    transition: all 0.3s;
+}
+
+.button-suspended {
+    color: #e05a68;
+    padding: 1px;
+    border: 3px solid #e05a68;
+    border-radius: 5px;
+}
+
+.button-suspended:hover {
+    color: #fff;
+    border: 3px solid #fff;
+    background-color: #e05a68;
+    transition: all 0.3s;
+}
+
+
+/* FORM Create Customer */
+
+.form-customer .from-original .group-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-customer .from-original .group-row div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-customer .from-original .group-row div:first-child {
+    margin-right: 15px;
+}
+
+.form-customer .from-original .group-row div label {
+    padding: 10px 0;
+}
+
+.form-customer .from-original .group-row div input {
+    padding: 5px 0;
+}
+
+.button-create {
+    margin-top: 15px;
+}
+
+.button-create .btn-create {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #299be4;
+}
+
+.button-create .btn-create:hover{
+    background-color: #299be4;
+}
+
+.button-create .btn-create:hover a {
+    color: #fff !important;
+}
+
+.button-create .btn-create a {
+    color: #299be4;
+    text-decoration: none;
+   
+}
+
+/* FORM edit Customer */
+
+.button-edit {
+    margin-top: 15px;
+}
+
+.button-edit .btn-edit {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+.button-edit .btn-edit:hover{
+    background-color: gray;
+}
+
+.button-edit .btn-edit:hover a {
+    color: #fff !important;
+}
+
+.button-edit .btn-edit a {
+    color: gray;
+    text-decoration: none;
+   
+}
+
+/* FORM deposit Customer */
+
+.button-deposit-submit {
+    margin-top: 15px;
+}
+
+.button-deposit-submit .btn-deposit {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #158652;
+}
+
+.button-deposit-submit .btn-deposit:hover{
+    background-color: #158652;
+}
+
+.button-deposit-submit .btn-deposit:hover a {
+    color: #fff !important;
+}
+
+.button-deposit-submit .btn-deposit a {
+    color: #158652;
+    text-decoration: none;
+   
+}
+
+/* FORM withdraw Customer */
+
+.button-withdraw-submit {
+    margin-top: 15px;
+}
+
+.button-withdraw-submit .btn-withdraw {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #ffbd03;
+}
+
+.button-withdraw-submit .btn-withdraw:hover{
+    background-color: #ffbd03;
+}
+
+.button-withdraw-submit .btn-withdraw:hover a {
+    color: #fff !important;
+}
+
+.button-withdraw-submit .btn-withdraw a {
+    color: #ffbd03;
+    text-decoration: none;
+   
+}
+
+/* FORM suspended Customer */
+
+.button-suspended-submit {
+    margin-top: 15px;
+}
+
+.button-suspended-submit .btn-suspended {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #e05a68;
+}
+
+.button-suspended-submit .btn-suspended:hover{
+    background-color: #e05a68;
+}
+
+.button-suspended-submit .btn-suspended:hover a {
+    color: #fff !important;
+}
+
+.button-suspended-submit .btn-suspended a {
+    color: #e05a68;
+    text-decoration: none;
+   
+}
+
+/* FORM transfer Customer */
+
+.row {
+    --bs-gutter-x: 0rem !important;
+    --bs-gutter-y: 0;
+    margin: 0;
+}
+
+.form-transfer .from-original .group-row {
+    display: flex;
+}
+
+.form-transfer .from-original .group-row > div{
+    display: flex;
+}
+
+.form-transfer .from-original .group-row > div > div {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.form-transfer .from-original .group-row div div{
+    width: 47%;
+    padding: 10px;
+}
+
+.form-transfer .from-original .group-row div div label {
+    padding: 10px 0;
+}
+
+.form-transfer .from-original .group-row div div input {
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.form-transfer .button-transfer-submit {
+    padding: 10px;
+}
+
+.button-transfer-submit {
+    margin-top: 15px;
+}
+
+.button-transfer-submit .btn-transfer {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #226ffd;
+}
+
+.button-transfer-submit .btn-transfer:hover{
+    background-color: #226ffd;
+}
+
+.button-transfer-submit .btn-transfer:hover a {
+    color: #fff !important;
+}
+
+.button-transfer-submit .btn-transfer a {
+    color: #226ffd;
+    text-decoration: none;
+   
+}

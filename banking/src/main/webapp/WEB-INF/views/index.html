@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Banking</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css"
+        integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-bar">
+            <div class="row header-container">
+                <div class="col-md-6 col-lg-6 header-title">
+                    <h1>List of Customer</h1>
+                </div>
+                <div class="col-md-6 col-lg-6 header-list">
+                    <button class="button-header" type="submit"><a href="#"><i
+                                class="fa fa-clock-rotate-left"></i>Transfer money Information</a></button>
+                    <button class="button-header" type="submit">
+                        <a href="/index?action=create"><i class="fa fa-plus-square"></i>Add new customer</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="table-service">
+            <table class="list-customer">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>FullName</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Balance</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5</td>
+                        <td>Cody Avila</td>
+                        <td>muribylyxa@mailinator.com</td>
+                        <td>+1 (907) 291-5613</td>
+                        <td>Laboris ut Velit Vol</td>
+                        <td>0</td>
+                        <td>
+                            <a href="update.html"><i
+                                    class="button-update fa fa-edit"></i></a>
+                            <a href="deposit.html"><i class="button-deposit fa fa-plus"></i></a>
+                            <a href="withdraw.html"><i class="button-withdraw fa fa-minus"></i></a>
+                            <a href="transfer.html"><i class="button-transfer fa fa-exchange"></i></a>
+                            <a href="ban.html"><i class="button-suspended fa fa-ban"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Orlando Miranda</td>
+                        <td>hitihyga@mailinator.com</td>
+                        <td>+1 (561) 506-7396</td>
+                        <td>Voluptatem qui nihil</td>
+                        <td>10 000 000</td>
+                        <td>
+                            <a href="update.html"><i
+                                    class="button-update fa fa-edit"></i></a>
+                            <a href="deposit.html"><i class="button-deposit fa fa-plus"></i></a>
+                            <a href="withdraw.html"><i class="button-withdraw fa fa-minus"></i></a>
+                            <a href="transfer.html"><i class="button-transfer fa fa-exchange"></i></a>
+                            <a href="ban.html"><i class="button-suspended fa fa-ban"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>Marshall Page</td>
+                        <td>luzudikivu@mailinator.com</td>
+                        <td>+1 (183) 538-7846</td>
+                        <td>Totam et rerum volup</td>
+                        <td>0</td>
+                        <td>
+                            <a href="update.html"><i
+                                    class="button-update fa fa-edit"></i></a>
+                            <a href="deposit.html"><i class="button-deposit fa fa-plus"></i></a>
+                            <a href="withdraw.html"><i class="button-withdraw fa fa-minus"></i></a>
+                            <a href="transfer.html"><i class="button-transfer fa fa-exchange"></i></a>
+                            <a href="ban.html"><i class="button-suspended fa fa-ban"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>Tatiana Kim</td>
+                        <td>nujuxalu@mailinator.com</td>
+                        <td>+1 (614) 533-3641</td>
+                        <td>Minima exercitation</td>
+                        <td>0</td>
+                        <td>
+                            <a href="update.html"><i
+                                    class="button-update fa fa-edit"></i></a>
+                            <a href="deposit.html"><i class="button-deposit fa fa-plus"></i></a>
+                            <a href="withdraw.html"><i class="button-withdraw fa fa-minus"></i></a>
+                            <a href="/transfer.html"><i class="button-transfer fa fa-exchange"></i></a>
+                            <a href="ban.html"><i class="button-suspended fa fa-ban"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>Halla Mosley</td>
+                        <td>cidozuq@mailinator.com</td>
+                        <td>+1 (605) 397-6403</td>
+                        <td>Ex ad fugit non ver</td>
+                        <td>0</td>
+                        <td>
+                            <a href="update.html"><i
+                                    class="button-update fa fa-edit"></i></a>
+                            <a href="deposit.html"><i class="button-deposit fa fa-plus"></i></a>
+                            <a href="withdraw.html"><i class="button-withdraw fa fa-minus"></i></a>
+                            <a href="transfer.html"><i class="button-transfer fa fa-exchange"></i></a>
+                            <a href="ban.html"><i class="button-suspended fa fa-ban"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
