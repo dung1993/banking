@@ -29,6 +29,7 @@ body {
     padding: 8px;
     border: 1px solid #fff;
     border-radius: 5px;
+    float: right
 }
 
 .button-header a {
@@ -299,6 +300,70 @@ body {
 
 .button-suspended-submit .btn-suspended a {
     color: #e05a68;
+    text-decoration: none;
+   
+}
+
+/* FORM transfer Customer */
+
+.row {
+    --bs-gutter-x: 0rem !important;
+    --bs-gutter-y: 0;
+    margin: 0;
+}
+
+.form-transfer .from-original .group-row {
+    display: flex;
+}
+
+.form-transfer .from-original .group-row > div{
+    display: flex;
+}
+
+.form-transfer .from-original .group-row > div > div {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.form-transfer .from-original .group-row div div{
+    width: 47%;
+    padding: 10px;
+}
+
+.form-transfer .from-original .group-row div div label {
+    padding: 10px 0;
+}
+
+.form-transfer .from-original .group-row div div input {
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.form-transfer .button-transfer-submit {
+    padding: 10px;
+}
+
+.button-transfer-submit {
+    margin-top: 15px;
+}
+
+.button-transfer-submit .btn-transfer {
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #226ffd;
+}
+
+.button-transfer-submit .btn-transfer:hover{
+    background-color: #226ffd;
+}
+
+.button-transfer-submit .btn-transfer:hover a {
+    color: #fff !important;
+}
+
+.button-transfer-submit .btn-transfer a {
+    color: #226ffd;
     text-decoration: none;
    
 }
