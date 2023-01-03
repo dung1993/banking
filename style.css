@@ -37,7 +37,7 @@ body {
     text-decoration: none;
 }
 
-.button-header:hover {
+.button-header a:hover {
     background-color: #fff;
     color: #299be4;
 }
