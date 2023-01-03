@@ -3,15 +3,13 @@ package com.example.banking.service;
 import com.example.banking.model.Customer;
 
 import java.math.BigDecimal;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerService extends DatabaseContent implements ICustomerService{
 
+    private int noOfRecords;
     @Override
     public List<Customer> getAllCustomer() {
         List<Customer> customers = new ArrayList<>();
@@ -66,25 +64,50 @@ public class CustomerService extends DatabaseContent implements ICustomerService
         return customers;
     }
 
-    @Override
-    public List<Customer> getAllCustomersByKwAndIdPaging(String kw, long id, int page, int numberOfPage) {
 
-        return null;
-    }
+
 
     @Override
     public void addCustomer(Customer customer) {
+        try{
+            Connection connection = getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement("insert into customers(full_name, email, phone, address, balance) values (?,?,?,?,?);");
+            preparedStatement.setString(1,customer.getFullName());
+            preparedStatement.setString(2,customer.getEmail());
+            preparedStatement.setString(3,customer.getPhone());
+            preparedStatement.setString(4,customer.getAddress());
+            preparedStatement.setBigDecimal(5,customer.getBalance());
 
+            preparedStatement.executeUpdate();
+            connection.close();
+        }catch (SQLException e){
+            printSQLException(e);
+        }
     }
 
     @Override
     public Customer findCustomerById(long id) {
+        try {
+            Connection connection = getConnection();
+            Statement statement = connection.createStatement();
+            String query = "select * from customers where id = ?;" + id;
+            ResultSet rs = statement.executeQuery(query);
+                while (rs.next()){
+                    Customer customer = getCustomerFromResultSet(rs);
+                    return customer;
+                }
+                connection.close();
+        }catch (SQLException e){
+            printSQLException(e);
+        }
         return null;
     }
 
     @Override
     public void updateCustomer(Customer customer) {
-
+        try {
+            
+        }
     }
 
     @Override
